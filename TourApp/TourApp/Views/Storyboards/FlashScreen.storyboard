@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WAU-Vr-ZGI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="heineken-Regular.ttf">
+            <string>HEINEKENCore</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Flash Screen View Controller-->
+        <scene sceneID="gVQ-us-Ct1">
+            <objects>
+                <viewController storyboardIdentifier="FlashScreenViewController" id="WAU-Vr-ZGI" customClass="FlashScreenViewController" customModule="Dion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iq3-1n-rON"/>
+                        <viewControllerLayoutGuide type="bottom" id="j5o-03-cRA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ke-F4-ecZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plash" translatesAutoresizingMaskIntoConstraints="NO" id="WET-qV-Nog">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-it-IGu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="74"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heineken_logo_green" translatesAutoresizingMaskIntoConstraints="NO" id="tCX-2U-A8q">
+                                        <rect key="frame" x="0.0" y="24" width="414" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hmx-Fe-2WW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tCX-2U-A8q" secondAttribute="bottom" constant="20" id="6jl-PS-Fcz"/>
+                                    <constraint firstAttribute="height" constant="74" id="Xme-YQ-SUF"/>
+                                    <constraint firstItem="tCX-2U-A8q" firstAttribute="leading" secondItem="SnT-it-IGu" secondAttribute="leading" id="fnx-7M-Ux5"/>
+                                    <constraint firstAttribute="trailing" secondItem="tCX-2U-A8q" secondAttribute="trailing" id="g9O-Tm-giT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-WF-9Ac">
+                                <rect key="frame" x="0.0" y="788" width="414" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="B8k-M1-ZvC"/>
+                                </constraints>
+                                <string key="text">Welcome to
+ HEINEKEN Vietnam Brewery Tours</string>
+                                <fontDescription key="fontDescription" name="HEINEKENCore" family="HEINEKEN Core" pointSize="16"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="2br-rM-yRa">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bi-JB-jio"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WET-qV-Nog" firstAttribute="top" secondItem="5bi-JB-jio" secondAttribute="top" id="0QA-Id-IUh"/>
+                            <constraint firstItem="5bi-JB-jio" firstAttribute="trailing" secondItem="tjP-WF-9Ac" secondAttribute="trailing" id="EJc-Pk-ei2"/>
+                            <constraint firstItem="2br-rM-yRa" firstAttribute="centerX" secondItem="1ke-F4-ecZ" secondAttribute="centerX" id="JZV-qn-Bb5"/>
+                            <constraint firstItem="5bi-JB-jio" firstAttribute="trailing" secondItem="SnT-it-IGu" secondAttribute="trailing" id="MEY-RV-T8h"/>
+                            <constraint firstItem="SnT-it-IGu" firstAttribute="leading" secondItem="5bi-JB-jio" secondAttribute="leading" id="QuP-2j-h3H"/>
+                            <constraint firstItem="j5o-03-cRA" firstAttribute="top" secondItem="WET-qV-Nog" secondAttribute="bottom" id="Xdz-xf-6jC"/>
+                            <constraint firstItem="WET-qV-Nog" firstAttribute="leading" secondItem="1ke-F4-ecZ" secondAttribute="leading" id="l49-Ti-kno"/>
+                            <constraint firstItem="tjP-WF-9Ac" firstAttribute="leading" secondItem="5bi-JB-jio" secondAttribute="leading" id="oyH-Ft-vzC"/>
+                            <constraint firstItem="j5o-03-cRA" firstAttribute="top" secondItem="tjP-WF-9Ac" secondAttribute="bottom" id="qDr-AD-tFK"/>
+                            <constraint firstAttribute="trailing" secondItem="WET-qV-Nog" secondAttribute="trailing" id="tPf-0B-BxN"/>
+                            <constraint firstItem="2br-rM-yRa" firstAttribute="centerY" secondItem="1ke-F4-ecZ" secondAttribute="centerY" id="xPK-xZ-afq"/>
+                            <constraint firstItem="SnT-it-IGu" firstAttribute="top" secondItem="5bi-JB-jio" secondAttribute="top" id="xn5-sz-fZ6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oN-72-CfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="-217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heineken_logo_green" width="122" height="29"/>
+        <image name="plash" width="375" height="529"/>
+    </resources>
+</document>

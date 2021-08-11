@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2x7-hq-TvL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="heineken-Bold.ttf">
+            <string>HEINEKENCore-Bold</string>
+        </array>
+        <array key="heineken-Regular.ttf">
+            <string>HEINEKENCore</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HEINEKEN-->
+        <scene sceneID="b5K-pZ-cF3">
+            <objects>
+                <viewController title="HEINEKEN" id="2x7-hq-TvL" customClass="ChooseLanguageViewController" customModule="Dion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GaG-F8-6IO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qZ2-6u-9zY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zCJ-th-1I1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYt-Jf-JIc">
+                                <rect key="frame" x="23" y="795" width="368" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nIU-F4-eP3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HEINEKENCore-Bold" family="HEINEKEN Core" pointSize="16"/>
+                                <state key="normal" title="TIẾP TỤC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueAction:" destination="2x7-hq-TvL" eventType="touchUpInside" id="wf7-CK-1Ny"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-G4-dgA">
+                                <rect key="frame" x="22" y="69" width="290" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="umz-MS-u4x"/>
+                                    <constraint firstAttribute="width" constant="290" id="yws-sx-97l"/>
+                                </constraints>
+                                <string key="text">Vui lòng chọn ngôn ngữ
+</string>
+                                <fontDescription key="fontDescription" name="HEINEKENCore" family="HEINEKEN Core" pointSize="22"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcN-dY-nW2">
+                                <rect key="frame" x="22" y="131" width="370" height="131"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-XK-PjG">
+                                        <rect key="frame" x="15" y="20" width="150" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="I0P-nO-aYO"/>
+                                            <constraint firstAttribute="height" constant="40" id="mTf-iV-VSS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HEINEKENCore" family="HEINEKEN Core" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tiếng Việt" image="checkbox_circle_normal">
+                                            <color key="titleColor" red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="checkbox_circle_selected"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-Wz-kac">
+                                        <rect key="frame" x="15" y="71" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Ot-ed-itz"/>
+                                            <constraint firstAttribute="width" constant="100" id="Rwx-f8-ZDw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HEINEKENCore" family="HEINEKEN Core" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="English" image="checkbox_circle_normal">
+                                            <color key="titleColor" red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="checkbox_circle_selected"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7DM-Wz-kac" firstAttribute="top" secondItem="aJP-XK-PjG" secondAttribute="bottom" constant="11" id="FQU-WS-PvT"/>
+                                    <constraint firstAttribute="height" constant="131" id="Uir-PC-xLQ"/>
+                                    <constraint firstItem="aJP-XK-PjG" firstAttribute="top" secondItem="UcN-dY-nW2" secondAttribute="top" constant="20" id="fIP-kz-QQO"/>
+                                    <constraint firstItem="aJP-XK-PjG" firstAttribute="leading" secondItem="UcN-dY-nW2" secondAttribute="leading" constant="15" id="xw7-sp-84k"/>
+                                    <constraint firstItem="7DM-Wz-kac" firstAttribute="leading" secondItem="UcN-dY-nW2" secondAttribute="leading" constant="15" id="zec-k9-9h3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-t0-OHm">
+                                <rect key="frame" x="22" y="116" width="15" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="9XC-0c-1xV"/>
+                                    <constraint firstAttribute="height" constant="1" id="BhB-vi-MLx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9j3-Zs-FLD"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h7e-t0-OHm" firstAttribute="leading" secondItem="zCJ-th-1I1" secondAttribute="leading" constant="22" id="5If-eS-bIa"/>
+                            <constraint firstItem="mmc-G4-dgA" firstAttribute="top" secondItem="9j3-Zs-FLD" secondAttribute="top" constant="25" id="HaZ-RY-AaX"/>
+                            <constraint firstItem="UcN-dY-nW2" firstAttribute="top" secondItem="h7e-t0-OHm" secondAttribute="bottom" constant="14" id="Mq5-LI-P0Z"/>
+                            <constraint firstItem="UcN-dY-nW2" firstAttribute="leading" secondItem="9j3-Zs-FLD" secondAttribute="leading" constant="22" id="QRY-h4-50q"/>
+                            <constraint firstItem="mmc-G4-dgA" firstAttribute="leading" secondItem="9j3-Zs-FLD" secondAttribute="leading" constant="22" id="SFM-aJ-52n"/>
+                            <constraint firstItem="9j3-Zs-FLD" firstAttribute="trailing" secondItem="UcN-dY-nW2" secondAttribute="trailing" constant="22" id="UYa-EL-Xte"/>
+                            <constraint firstItem="XYt-Jf-JIc" firstAttribute="leading" secondItem="9j3-Zs-FLD" secondAttribute="leading" constant="23" id="UtD-mW-Ia7"/>
+                            <constraint firstItem="qZ2-6u-9zY" firstAttribute="top" secondItem="XYt-Jf-JIc" secondAttribute="bottom" constant="22" id="noE-Li-NUt"/>
+                            <constraint firstItem="h7e-t0-OHm" firstAttribute="top" secondItem="mmc-G4-dgA" secondAttribute="bottom" constant="16" id="pWE-hH-Z1q"/>
+                            <constraint firstItem="9j3-Zs-FLD" firstAttribute="trailing" secondItem="XYt-Jf-JIc" secondAttribute="trailing" constant="23" id="qLl-do-cAN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="UcN-dY-nW2" id="ymI-wY-xRb"/>
+                        <outlet property="checkBoxEn" destination="7DM-Wz-kac" id="UfR-5P-3Jc"/>
+                        <outlet property="checkBoxVn" destination="aJP-XK-PjG" id="NhJ-Nj-keZ"/>
+                        <outlet property="chooseLanguageLabel" destination="mmc-G4-dgA" id="kaH-ik-yO9"/>
+                        <outlet property="continueBtn" destination="XYt-Jf-JIc" id="Wsp-Yn-E8G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMm-CP-ojJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="-259"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbox_circle_normal" width="22" height="22"/>
+        <image name="checkbox_circle_selected" width="20" height="20"/>
+    </resources>
+</document>
